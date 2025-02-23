@@ -87,6 +87,7 @@ func main() {
 		tempFreq = generateFrequentItems(dataset, prunedCandidates, minsum)
 	}
 
+	fmt.Printf("Minimum Support Level: %.0f%%\n", minsum)
 	fmt.Println("Frequent Items:")
 	for _, item := range frequentItems {
 		fmt.Printf("%v\n", item)
